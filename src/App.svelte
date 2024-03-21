@@ -35,10 +35,6 @@
 </header> -->
 
 <main>
-    <Table 
-        data={data}
-    />
-
     <div class="legend-table">
         <h3>Legend</h3>
         <table class="table aqhiScale">
@@ -65,6 +61,10 @@
             </tbody>
         </table>
     </div>
+    
+    <Table 
+        data={data}
+    />
 </main>
 
 <footer>
