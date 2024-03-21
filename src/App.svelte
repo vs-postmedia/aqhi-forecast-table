@@ -40,7 +40,7 @@
 </main>
 
 <footer>
-    <p class="source">Source:  <a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/current-air-quality-data" target="_blank">B.C. government</a></p>
+    <p class="source">Source:  <a href="https://envistaweb.env.gov.bc.ca/" target="_blank">B.C. government</a></p>
 </footer>
   
 <style>
