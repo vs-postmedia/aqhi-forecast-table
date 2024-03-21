@@ -34,14 +34,14 @@
             formatter: cell => formatCell(cell)
         },
         {
-            name: 'Tmrw', id: 'tomorrow', maxWidth: '90px',
+            name: 'Tomorrow', id: 'tomorrow', maxWidth: '90px',
             attributes: cell => assignColour(cell),
             formatter: cell => formatCell(cell)
-        },
-        {
-            name: 'Tmrw night', id: 'tomorrow_night', maxWidth: '90px',
-            attributes: cell => assignColour(cell),
-            formatter: cell => formatCell(cell)
+        // },
+        // {
+        //     name: 'Tmrw night', id: 'tomorrow_night', maxWidth: '90px',
+        //     attributes: cell => assignColour(cell),
+        //     formatter: cell => formatCell(cell)
         }
     ];
 
@@ -96,8 +96,4 @@
 <style global>
     /* @import "https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css"; */
     @import '$css/gridjs.css';
-
-    .gridjs .gridjs-td h2 {
-        font-size: 3rem;
-    }
 </style>

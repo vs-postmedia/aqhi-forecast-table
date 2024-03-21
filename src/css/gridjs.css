@@ -211,7 +211,7 @@ td.gridjs-td {
 }
 
 td.gridjs-td:first-child {
-    max-height: 50px;
+    padding-left: 0;
     text-wrap: pretty;
 	vertical-align: middle;
 }
