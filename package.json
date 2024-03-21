@@ -1,5 +1,5 @@
 {
-	"name": "svelte-template",
+	"name": "aqhi-forecast-table",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -21,7 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"d3-dsv": "^3.0.1",
-		"svelte-select": "^5.7.0"
+		"gridjs": "^6.2.0",
+		"gridjs-svelte": "^2.1.1"
 	}
 }
