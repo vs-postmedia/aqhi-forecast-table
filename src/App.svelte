@@ -36,7 +36,7 @@
 
 <main>
     <div class="legend-table">
-        <h3>Legend</h3>
+        <h3>Risk level:</h3>
         <table class="table aqhiScale">
             <tbody>
                 <tr>
@@ -52,16 +52,16 @@
                     <td class="aqhi10">10</td>
                     <td class="aqhi11" colspan="2">+</td>
                 </tr>
-                <tr>
-                    <td class="aqhiRisk" colspan="3">Low<span style="display:block">Risk</span></td>
-                    <td class="aqhiRisk" colspan="3">Moderate<span style="display:block">Risk</span></td>
-                    <td class="aqhiRisk" colspan="4">High<span style="display:block">Risk</span></td>
-                    <td class="aqhiRisk" colspan="2">Very<span style="display:block">High Risk</span></td>
+                <tr class="legend-text">
+                    <td class="aqhiRisk" colspan="3">Low</td>
+                    <td class="aqhiRisk" colspan="3">Moderate</td>
+                    <td class="aqhiRisk" colspan="4">High</td>
+                    <td class="aqhiRisk" colspan="2">Very high</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    
+
     <Table 
         data={data}
     />

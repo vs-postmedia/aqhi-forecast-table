@@ -189,6 +189,7 @@ button.gridjs-sort:focus {
 }
 
 table.gridjs-table {
+	border: none;
 	border-collapse: collapse;
 	display: table;
 	margin: 0;
@@ -205,13 +206,15 @@ table.gridjs-table {
 }
 
 td.gridjs-td {
-    border: 5px solid #FFF;
+    border: 3px solid #FFF;
 	box-sizing: content-box;
 	padding: 6px 8px;
+	vertical-align: middle;
 }
 
 td.gridjs-td:first-child {
     padding-left: 0;
+	text-align: left;
     text-wrap: pretty;
 	vertical-align: middle;
 }
@@ -232,7 +235,7 @@ th.gridjs-th {
     border: 1px solid #FFF;
 	border-top: none;
 	box-sizing: border-box;
-	color: #6b7280;
+	color: #231F20;
     font-weight: 800;
 	outline: none;
 	padding: 3px 6px;

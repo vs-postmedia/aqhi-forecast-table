@@ -1,8 +1,3 @@
-/** Custom AQHI Table CSS by RJT **/
-#breadcrumbContainer {
-    height: 0;
-}
-
 table {
     padding: 0px;
     margin: 0;
@@ -20,6 +15,12 @@ table.aqhiScale {
     width: 100%;
 }
 
+table.aqhiScale .legend-text td {
+    color: rgb(28, 28, 28);
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
 td {
     border: 1px solid #FFF;
     text-align: center;
@@ -105,344 +106,20 @@ td.left {
     color: #FFFFFF;
 }
 
-.aqhiSO {
-    background-color: #fff;
-    font-weight: bold;
-    color: #494949;
-}
-
-.unavailable {
-    padding-bottom: 5px;
-    padding-top: 15px;
-    border: medium none !important;
-}
-
 td.aqhiRisk {
     color: #000000;
     font-weight: bold;
 }
 
-p.subtitle {}
-
-td.stationName {}
-
-td.aqhiDate {
-    text-align: left;
-    border: none
-}
-
-table.aqhiTable {
-    position: absolute;
-    float: right;
-    top: 0px;
-    right: 0px;
-    border: none;
-}
-
-.tableMd {
-    display: none;
-    height: 0;
-}
 
 #aqhiContent {
     width: 100%;
-}
-
-#aqhiStation {
-    min-height: 54px;
-    position: relative;
-    padding-left: 5px;
-    padding-top: 2px;
-    border-bottom: 1px solid #EBEBEB;
-}
-
-#aqhiStationHeader {
-    position: relative;
-    padding-left: 0;
-    padding-top: 2px;
 }
 
 th {
     text-align: center;
 }
 
-.headerStnName {
-    float: left;
-    width: 205px;
-    font-weight: bold;
-    padding-top: 5px;
-    font-size: 18px;
-}
-
-.headerStnNameLabel {
-    float: left;
-    width: 20%;
-    font-weight: bold;
-}
-
-.headerForecast {
-    float: right;
-    width: 292px;
-    text-align: center;
-    border-bottom: 1px solid #EBEBEB;
-}
-
-.headerOther {
-    float: left;
-    width: 95px;
-    text-align: center;
-    padding-left: 3px;
-}
-
-#aqhiReadingContainer {
-    float: right;
-    position: relative;
-}
-
-.aqhiReading {
-    float: left;
-    width: 120px;
-    text-align: center;
-    border: 1px solid #EBEBEB;
-    height: auto;
-    overflow: hidden;
-    padding: 5px;
-}
-
-.aqhiReadingLabel {
-    float: right;
-    width: 122px;
-    text-align: center;
-    border: none;
-    height: inherit;
-    font-size: 14px;
-}
-
 .clearAll {
     clear: both;
 }
-
-.aqhiRow {
-    border-bottom: 1px solid #EBEBEB;
-    position: relative;
-}
-
-.aqhiRow:hover{
-	background-color:#f5f5f5;
-}
-
-#blockLeft {
-    width: 25%;
-    float: left;
-    padding: 10px;
-    background-color: inherit;
-}
-
-#blockRight {
-    width: 75%;
-    float: right;
-    padding: 10px;
-    background-color: inherit;
-}
-
-.aqhiMaxLabel {
-    text-align: right; 
-    margin-right:7.5em;
-    font-weight:bold;
-    font-size:large
-}
-
-.aqhiLabel {
-    border-bottom: 1px solid #EBEBEB;
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.aqhiRowDate {
-    padding-bottom: 7px;
-    font-size: 14px;
-    color: #494949;
-    float: left;
-}
-
-.forecastLabel {
-    display: none;
-}
-
-#SelectCommunity {
-    display: none;
-}
-
-.maximumLabel {
-        display: none;
-    }
-
-@media (max-width: 1200px) {
-    
-    #blockLeft {
-    width: 20%;
-    float: left;
-    padding: 10px;
-    background-color: inherit;
-}
-
-    #blockRight {
-    width: 80%;
-    float: right;
-    padding: 10px;
-    background-color: inherit;
-    }
-    
-    .headerStnName {
-    width: auto;
-   font-size: medium;
-}    
-    
-
-    .headerStnNameLabel {
-        display: block;
-        width: 25%;
-    }
-
-    .aqhiReadingLabel {
-        display: block;
-        width: 18%;
-        
-    }
-    
-    .aqhiRowDate {
-        font-size: 13px;
-        
-    }
-
-    .tableLg {
-        display: none;
-        height: 0;
-    }
-
-    .tableMd {
-        display: inline;
-        height: auto;
-    }
-
-    .aqhiRowLabel {
-        float: right;
-        width: 88%;
-    }
-
-    #aqhiReadingContainer {
-        float: none;
-
-    }
-
-    .aqhiReading {
-        float: left;
-        width: 20%;
-        font-size: .9em;
-    }
-
-    .maximumLabel {
-        display: none;
-    }
-
-}
-
-@media (max-width: 768px){
-    .container {width:90%}
-}
-@media (max-width: 600px) {
-    .aqhiRow:hover{
-	background-color:#f1f1f1;
-}
-    
-    #SelectCommunity {
-        display: block;
-    }
-    
-    #blockLeft {
-        width: 100%;
-        float: left;
-        padding: 5px;
-    }
-
-    #blockRight {
-        width: 100%;
-        float: left;
-        padding: 10px;
-    }
-    
-    .aqhiMaxLabel {
-        display: none;
-    }
-
-    .forecastLabel {
-        display: block;
-        text-align: center;
-    }
-
-    .aqhiRow {
-        width: 100%;
-        min-height: auto;
-        margin-top: 20px;
-    }
-
-    .maximumLabel {
-        display: block;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 75px;
-    }
-
-    .aqhiLabel {
-        width: 100%;
-        min-height: 85px;
-    }
-
-    .aqhiReadingLabel {
-        display: none;
-    }
-
-    .aqhiRowDate {
-        float: left;
-        width: auto;
-        font-size: medium;
-    }
-
-    .headerStnName {
-        width: 100%;
-        font-size: larger;
-    }
-
-    .headerStnNameLabel {
-        width: 44%;
-    }
-
-    #aqhiReadingContainer {
-        float: left;
-        width: 100%;
-    }
-
-    .aqhiReading {
-        width: 100%;
-    }
-
-    .headerOther {
-        width: 50px;
-        font-size: small;
-        padding-left: 2px;
-    }
-
-    #aqhiStationHeader {
-        padding-left: 0;
-    }
-
-    #aqhiHeaderRow1 {
-        display: none;
-    }
-
-    #aqhiHeaderRow2 {
-        text-align: left;
-    }
-}
-
-

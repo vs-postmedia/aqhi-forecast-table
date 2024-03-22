@@ -12,29 +12,29 @@
     // VARS
     let tooltipData;
     let width = 500;
-    let tableHeight = '600px';
+    let maxColWidth = '20%';
     const colourLookup = ['#00CCFF','#0099CC','#006699','#FFFF00','#FFCC00','#FF9933','#FF6666','#FF0000','#CC0000','#990000','#660000']; // AQHI COLOUR VALUES
     const textLookup = ['Low','Low','Low','Moderate','Moderate','Moderate','Moderate', 'High','High','High','Very high'];
    
     $: columns = [
         {   
             name: 'Name',
-            maxWidth: '110px',
+            maxWidth: '40%',
             formatter: cell => html(`<b>${cell}</b>`)
         },
         {
-            name: 'Today', id: 'today', maxWidth: '90px',
+            name: 'Today', id: 'today', maxWidth: maxColWidth,
             attributes: cell => assignColour(cell),
             // data: cell => cellText(cell, 'today'),
             formatter: cell => formatCell(cell),
         },
         {
-            name: 'Tonight', id: 'tonight', maxWidth: '90px',
+            name: 'Tonight', id: 'tonight', maxWidth: maxColWidth,
             attributes: cell => assignColour(cell),
             formatter: cell => formatCell(cell)
         },
         {
-            name: 'Tomorrow', id: 'tomorrow', maxWidth: '90px',
+            name: 'Tmrw.', id: 'tomorrow', maxWidth: maxColWidth,
             attributes: cell => assignColour(cell),
             formatter: cell => formatCell(cell)
         // },
