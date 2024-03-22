@@ -213,6 +213,7 @@ td.gridjs-td {
 }
 
 td.gridjs-td:first-child {
+	max-width: 100px !important;
     padding-left: 0;
 	text-align: left;
     text-wrap: pretty;

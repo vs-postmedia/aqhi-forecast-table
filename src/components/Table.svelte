@@ -11,7 +11,7 @@
     // VARS
     let tooltipData;
     let width = 500;
-    // let maxColWidth = '25%';
+    let maxColWidth = '100px';
     
     // AQHI COLOUR VALUES
     const colourLookup = ['#00CCFF','#0099CC','#006699','#FFFF00','#FFCC00','#FF9933','#FF6666','#FF0000','#CC0000','#990000','#660000'];
@@ -21,8 +21,9 @@
     // REACTIVE VARS
     $: columns = [
         {   
-            name: 'Name',
-            maxWidth: '150px',
+            name: 'Region',
+            id: 'name',
+            maxWidth: maxColWidth,
             formatter: cell => html(`<b>${cell}</b>`)
         },
         {
@@ -90,6 +91,32 @@
     }
 </script>
 
+<div class="legend-table">
+    <h3>Risk level:</h3>
+    <table class="table aqhiScale">
+        <tbody>
+            <tr>
+                <td class="aqhi1">1</td>
+                <td class="aqhi2">2</td>
+                <td class="aqhi3">3</td>
+                <td class="aqhi4">4</td>
+                <td class="aqhi5">5</td>
+                <td class="aqhi6">6</td>
+                <td class="aqhi7">7</td>
+                <td class="aqhi8">8</td>
+                <td class="aqhi9">9</td>
+                <td class="aqhi10">10</td>
+                <td class="aqhi11" colspan="2">+</td>
+            </tr>
+            <tr class="legend-text">
+                <td class="aqhiRisk" colspan="3">Low</td>
+                <td class="aqhiRisk" colspan="3">Moderate</td>
+                <td class="aqhiRisk" colspan="4">High</td>
+                <td class="aqhiRisk" colspan="2">Very high</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <div class="chart-container" bind:clientWidth={width}>
     <Grid 
@@ -101,5 +128,6 @@
 
 <style global>
     /* @import "https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css"; */
+    @import '$css/aqhi-legend.css';
     @import '$css/gridjs.css';
 </style>

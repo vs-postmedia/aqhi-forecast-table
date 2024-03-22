@@ -6,7 +6,7 @@ table {
 
 table.aqhiScale {
     padding: 0px;
-    margin: 0;
+    margin: 5px 0;
     border-spacing: 0;
     font: inherit;
     font-weight: bold;
@@ -21,8 +21,8 @@ table.aqhiScale .legend-text td {
     font-style: italic;
     font-weight: 400;
 }
-td {
-    border: 1px solid #FFF;
+table.aqhiScale td {
+    border: 2px solid #FFF;
     text-align: center;
     padding: 1px 2px;
     font-style: normal;
@@ -30,9 +30,9 @@ td {
     padding-bottom: 4px;
 }
 
-td.left {
+/* td.left {
     text-align: left;
-}
+} */
 
 .aqhi1 {
     background-color: #00ccff;
