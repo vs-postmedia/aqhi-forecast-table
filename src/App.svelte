@@ -5,7 +5,6 @@
     import Table from "$components/Table.svelte";
 
     // DATA
-    // const dataUrl = 'https://raw.githubusercontent.com/vs-postmedia/bc-aqhi-scraper/master/data/aqhi-data.csv';
     const dataUrl = 'https://raw.githubusercontent.com/vs-postmedia/bc-wildfire-scraper/master/data/aqhi-data.csv';
 
     // VARIABLES
@@ -23,16 +22,11 @@
         // fetch remote data
         data = await fetchData(dataUrl);
         data = data.filter(d => d.name !== '');
-        console.log(data);
+        // console.log(data);
     }
 
     onMount(init);
 </script>
-
-<!-- <header>
-    <h1>Maximum AQHI forecast</h1>
-    <p class="subhead">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</header> -->
 
 <main>
     <div class="legend-table">
